@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ContactoMortal</string>
+    <string name="app_name">ExamenAndroidTris</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
