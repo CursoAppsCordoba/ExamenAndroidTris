@@ -31,14 +31,18 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         EditText edtNombre = (EditText) this.findViewById(R.id.edtnombre);
         EditText edtMail = (EditText) this.findViewById(R.id.edtmail);
         EditText edtEdad = (EditText) this.findViewById(R.id.edtedad);
-        String nom = edtNombre.getText().toString();
-        String mail = edtMail.getText().toString();
-        Integer edad = Integer.parseInt(edtEdad.getText().toString());
-        //boton_aceptar.setOnClickListener(this);
-        //boton_cancelar.setOnClickListener(this);
-        //contacto = new ArrayList<>();
+        //compruebo que estén todos los campos llenos para añadir el contacto
+        if(!edtNombre.getText().toString().equals("") && !edtMail.getText().toString().equals("") && !edtEdad.getText().toString().equals("")) {
+            String nom = edtNombre.getText().toString();
+            String mail = edtMail.getText().toString();
+            Integer edad = Integer.parseInt(edtEdad.getText().toString());
+            //boton_aceptar.setOnClickListener(this);
+            //boton_cancelar.setOnClickListener(this);
+            //contacto = new ArrayList<>();
 
-        contacto = new Contacto(nom, mail, edad);
+            contacto = new Contacto(nom, mail, edad);
+        }
+
     }
 
 

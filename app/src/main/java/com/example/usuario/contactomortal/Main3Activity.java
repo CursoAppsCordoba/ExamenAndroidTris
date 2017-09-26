@@ -26,14 +26,17 @@ public class Main3Activity extends AppCompatActivity implements OnClickListener{
         EditText edtNombre = (EditText) this.findViewById(R.id.ednom);
         EditText edtMail = (EditText) this.findViewById(R.id.edmail);
         EditText edtEdad = (EditText) this.findViewById(R.id.ededad);
-        String nom = edtNombre.getText().toString();
-        String mail = edtMail.getText().toString();
-        Integer edad = Integer.parseInt(edtEdad.getText().toString());
-        boton_aceptar.setOnClickListener(this);
-        boton_cancelar.setOnClickListener(this);
-        //contacto = new ArrayList<>();
+        //compruebo que estén todos los campos llenos para poder borrar el contacto
+        if(!edtNombre.getText().toString().equals("") && !edtMail.getText().toString().equals("") && !edtEdad.getText().toString().equals("")) {
+            String nom = edtNombre.getText().toString();
+            String mail = edtMail.getText().toString();
+            Integer edad = Integer.parseInt(edtEdad.getText().toString());
+            boton_aceptar.setOnClickListener(this);
+            boton_cancelar.setOnClickListener(this);
+            //contacto = new ArrayList<>();
 
-        contacto = new Contacto(nom, mail, edad);
+            contacto = new Contacto(nom, mail, edad);
+        }
     }
 
 

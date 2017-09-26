@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,9 +33,25 @@ public class lista extends AppCompatActivity implements View.OnClickListener{
         ArrayList<String> listado=(ArrayList<String>) intent.getSerializableExtra("lista");
         adapter= new ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1,listado);
         listView.setAdapter(adapter);
-        
+
+        //final Toast toast=new Toast(getApplicationContext());
+        listView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
+
+
+                Contacto c=(Contacto)adapter.getItemAtPosition(position) ;
+                String valor=c.getNombre();
+                Toast.makeText(getApplicationContext(), "Contacto seleccionado: " + valor, Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+
+
 
     }
+
 
 
 
