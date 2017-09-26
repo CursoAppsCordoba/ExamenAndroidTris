@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.contactomortal.MainActivity">
+
+    <Button
+        android:id="@+id/btanadir"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:onClick="onClick"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/btborrar"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btanadir"
+        android:layout_alignRight="@+id/btanadir"
+        android:layout_below="@+id/btanadir"
+        android:layout_marginTop="55dp"
+        android:onClick="onClick"
+        android:text="Borrar" />
+
+    <Button
+        android:id="@+id/btlistar"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btborrar"
+        android:layout_alignStart="@+id/btborrar"
+        android:layout_below="@+id/btborrar"
+        android:layout_marginTop="40dp"
+        android:onClick="onClick"
+        android:text="Listar" />
+</RelativeLayout>

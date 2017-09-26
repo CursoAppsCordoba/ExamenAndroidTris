@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.contactomortal.Main3Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:layout_alignBottom="@+id/ednom"
+        android:layout_toLeftOf="@+id/ednom"
+        android:layout_toStartOf="@+id/ednom"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="98dp"
+        android:layout_alignBottom="@+id/edmail"
+        android:layout_toLeftOf="@+id/btBorra"
+        android:layout_toStartOf="@+id/btBorra"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <EditText
+        android:id="@+id/ednom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="introduzca nombre"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_above="@+id/edmail"
+        android:layout_alignLeft="@+id/edmail"
+        android:layout_alignStart="@+id/edmail"
+        android:layout_marginBottom="27dp" />
+
+    <EditText
+        android:id="@+id/edmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="introduzca email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="79dp"
+        android:layout_above="@+id/ededad"
+        android:layout_alignLeft="@+id/ededad"
+        android:layout_alignStart="@+id/ededad"
+        android:layout_marginBottom="17dp" />
+
+    <EditText
+        android:id="@+id/ededad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="introduzca edad"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="144dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="119dp"
+        android:layout_above="@+id/btBorra"
+        android:layout_alignRight="@+id/btVuelve"
+        android:layout_alignEnd="@+id/btVuelve" />
+
+    <Button
+        android:id="@+id/btBorra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btVuelve"
+        android:layout_alignBottom="@+id/btVuelve"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:onClick="onClick"
+        android:text="Borrar"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/btVuelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="303dp"
+        android:layout_marginBottom="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ededad"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5"
+        android:text="edad" />
+</RelativeLayout>

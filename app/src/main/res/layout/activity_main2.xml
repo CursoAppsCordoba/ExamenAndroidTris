@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.contactomortal.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Nombre:" />
+
+    <EditText
+        android:id="@+id/edtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Introduzca su nombre"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtnombre"
+        android:layout_marginTop="43dp"
+        android:layout_toLeftOf="@+id/edtnombre"
+        android:layout_toStartOf="@+id/edtnombre"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/edtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Introduzca su email"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="53dp"
+        android:text="edad" />
+
+    <EditText
+        android:id="@+id/edtedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Introduzca su edad"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btaceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="105dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:onClick="onClick"
+        android:text="Aceptar" />
+
+    <Button
+        android:id="@+id/btcancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtmail"
+        android:layout_alignRight="@+id/edtmail"
+        android:layout_alignTop="@+id/btaceptar"
+        android:onClick="onClick"
+        android:text="Cancelar" />
+</RelativeLayout>
